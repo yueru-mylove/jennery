@@ -9,3 +9,8 @@ eureka:
       defaultZone: http://localhost:8761/eureka
     register-with-eureka: false
     fetch-registry: false
+    registry-fetch-interval-seconds: 30
+  instance:
+    prefer-ip-address: true
+    lease-expiration-duration-in-seconds: 90 # how long can the client keep no signal
+    lease-renewal-interval-in-seconds: 30 # heartbeat

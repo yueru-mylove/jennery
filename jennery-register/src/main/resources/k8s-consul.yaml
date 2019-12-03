@@ -71,6 +71,9 @@ spec:
             - "-retry-join=consul-2.consul.$(NAMESPACE).svc.cluster.local"
             - "-domain=cluster.local"
             - "-disable-host-node-id"
+          volumeMounts:
+            - mountPath: /opt/consul
+              name: /consul/data
           env:
             - name: PODIP
               valueFrom:
