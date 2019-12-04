@@ -9,6 +9,16 @@ spring:
     name: gateway
   cloud:
     gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - HEAD
+              - OPTION
       routes:
         - id: web-route
           uri: lb://jennery-web:8066
