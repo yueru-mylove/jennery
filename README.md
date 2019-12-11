@@ -1,3 +1,12 @@
+
+##### jennery-blog 
+> 基于 SpringBoot 和SpringCloud 2.1.X 开发的简书型博客系统。
+
+
+##### 使用指南
+- jennery-register 注册中心和配置中心，使用k8s集群部署的consul集群。本地调试使用eureka和application.yml替代
+- jennery-gateway   网关组件。使用Spring Cloud Gateway组件，配置网关路由和熔断（Hystrix or Resilience4j）。
+- jennery-web       web端工程入口。 
 # k8s 单机部署指南 -非tls bootstrap部署
 
 > 因为目前只有两台服务器，之前已经部署过一次tls bootstrap形式的cluster。后因为ssh账户被攻破而重置了ECS。而且考虑到现在主要是为了使用k8s部署应用，并且ECS资源的限制。因此就不打算再一次部署cluster。这里只做单机非安全模式的部署。
