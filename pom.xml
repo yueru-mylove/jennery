@@ -11,6 +11,7 @@
         <module>jennery-register</module>
         <module>jennery-gateway</module>
         <module>jennery-web</module>
+        <module>jennery-spider</module>
     </modules>
     <packaging>pom</packaging>
 
